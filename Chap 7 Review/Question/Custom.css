@@ -1,0 +1,27 @@
+﻿/* Joshua Carpentier */ /* this is how you comment in css*/
+/*
+5. Create two HTML files, Home.html and About.html, each of which uses the external style
+    sheet definitions in a file named Custom.css (that you create) to display:<br /><br />
+    a. Blue background
+    b. Yellow heading text
+    c. White paragraph text
+*/
+/* external style sheet*/
+body {
+    background-color: dodgerblue;
+}
+
+h1 {
+    color: yellow;
+}
+
+p {
+    color: white;
+}
+
+a {
+    color: white;
+    background-color: red;
+    font-style: oblique;
+    font-size: large;
+}

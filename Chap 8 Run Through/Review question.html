@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style>
+        .BigBlue {
+            font-size: 200%;
+            color: blue;
+            font-family: Arial;
+        }
+
+        .Body {
+            background-color: yellow;
+        }
+
+        .white {
+            background-color: white;
+        }
+
+        li:first-letter { /*why do some psuedos have a pair like this ::*/
+            font-size: 200%;
+            color: crimson;
+        }
+
+        ol:first-line {
+            font-size: 300%;
+            color: brown;
+        }
+
+        p::before {
+            content: "\00BB";
+            font-size: 100%;
+        }
+
+        p::after {
+            content: "???????????????????";
+            font-size: 100%;
+        }
+
+        input:enabled {
+            background-color: red;
+        }
+
+        input:disabled {
+            background-color: black; /* will locate disable input and change background*/
+        }
+
+        input:checked + span {
+            color:white;
+            background-color:red;
+        }
+    </style>
+
+
+</head>
+<body class="Body">
+    1. Create and apply a CSS class named BigBlue, which selects a large, blue-colored font.
+    <p class="BigBlue">hdfuyfiuyf</p>
+    2. Create and apply a CSS class named YellowBackground that selects a yellow background.
+    Apply the class to your HTML file’s body tag.<br /><br />
+
+    3. Create an ordered list that uses both the BigBlue and YellowBackground styles that you
+    created in Questions 1 and 2.
+    <ol class="BigBlue Body">
+        <li>hlihlhi</li>
+        <li class="white">ihlohohp</li>
+        <li>hoihoi</li>
+    </ol>
+
+
+    4. Create a paragraph-specific class named BigBlue that you created in Question 1, which uses
+    the Arial font. Show the use of the standard and class-specific classes within your HTML file.
+    <p class="BigBlue Body">hlikihgbb</p>
+
+    5. Create an HTML file that illustrates the use of the :first-letter and :first-line pseudo
+    elements.<br /><br />
+
+    6. Create an HTML file that illustrates the use of the :after and :before pseudo elements.<br /><br />
+
+    7. Create an HTML file that illustrates the use of the :checked, :enabled, and :disabled
+    pseudo classes.
+    <form name="frmLogin">
+        <br /><span>Email:</span>
+        <input type="email" name="txtemail" value="" />
+        <br /><span>Password:</span>
+        <input type="password" name="txtPwd" value="" disabled />
+        <input type="radio" name="rdbGender" value="m" checked />
+        <span>Male</span>
+        <input type="radio" name="rdbGender" value="f" />
+        <span>Female</span><br /><br />
+        <input type="submit" value="Submit" />
+        <input type="reset" value="Reset" />
+
+    </form>
+
+
+</body>
+</html>

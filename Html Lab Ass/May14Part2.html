@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script>
+        // Joshua Carpentier
+        // JS3dynamic Loan Calc with Login
+        /*
+        Redo the loan problem with everything is dynamically generated. Add, login page, which checks for username and password, once the 
+        username/password is incorrect, it should not let the user login and it should highlight the input elements with red color using 
+        CSS. You take out an interest-free carloan for $10,000 and, to repay the loan, you have to pay $150/week. Create program using a 
+        WHILE loop to calculate the balance due each week until the loan is paid.
+        */
+        window.onload = authenticate;
+        
+        function authenticate() {
+            alert("hi");
+            var divcon = document.createElement("div");
+            divcon.id = "divcon";
+            document.body.appendChild(divcon);
+            divcon.style.backgroundColor = "LightGreen";
+
+            var userlabel = document.createElement("label");
+            userlabel.innerHTML = "Username: ";
+            var user =document.createElement("input");
+            user.type = "text";
+            user.id = "user";
+
+
+            var passwdlabel = document.createElement("label");
+            passwdlabel.innerHTML = "Password: ";
+            var passwd = document.createElement("input");
+            passwd.type = "password";
+            passwd.id = "passwd";
+
+            var button = document.createElement("input");
+            button.value = "sign in";
+            button.type = "button"
+            button.onclick = authenticated;
+
+            divcon.appendChild(userlabel);
+            divcon.appendChild(user);
+            divcon.appendChild(passwdlabel);
+            divcon.appendChild(passwd);
+            divcon.innerHTML += "<br/>";
+            divcon.appendChild(button);
+        }
+
+        function authenticated() {
+            var user = document.getElementById("user").value;
+            var passwd = document.getElementById("passwd").value;
+            var divcon = document.getElementById("divcon");
+            var userreal = "alex";
+            var passwdreal = "123";
+            if (user == userreal && passwd == passwdreal) {
+                document.body.removeChild(divcon);
+                prepare();
+            }
+            else window.document.writeln("Wrong User/passwd combination");
+        }
+
+        function prepare() {
+
+            var loanlabel = document.createElement("label");
+            loanlabel.innerHTML = "Loan Amount";
+            var loan = document.createElement("input");
+            loan.type = "number";
+            loan.id = "loan";
+
+            var weeklylabel = document.createElement("label");
+            weeklylabel.innerHTML = "<br/> Weekly";
+            var weekly = document.createElement("input");
+            weekly.type = "number";
+            weekly.id = "weekly";
+
+            var button = document.createElement("input");
+            button.value = "click to calculate please";
+            button.type = "button"
+            button.onclick = calculate ;
+
+            var result = document.createElement("H1");
+            result.id = "result";
+
+            document.body.appendChild(loanlabel);
+            document.body.appendChild(loan);
+            document.body.appendChild(weeklylabel);
+            document.body.appendChild(weekly);
+            document.body.innerHTML += "<br />";
+            document.body.appendChild(button);
+            document.body.appendChild(result);
+        }
+
+        function calculate() {
+            var balance = document.getElementById("loan").value;
+            var weekly = document.getElementById("weekly").value;
+
+            var count = 0;
+            var result = document.getElementById("result");
+
+            while (balance > 0) {
+                if(balance >= 150)
+                    balance = balance - weekly;
+                else balance = balance - balance;
+                count = count + 1;
+                result.innerHTML += "Week: " +count+". Balance $" + balance + "<br/>";
+            }
+
+        }
+    </script>
+</head>
+<body id="body">
+    <label for="loan">Loan</label>
+    <input type="number" id="loan" />
+
+    <label for="weekly">Weekly</label>
+    <input type="number" id="weekly" />
+    <input type="button" value="calculate" onclick="calculate()" />
+
+    <h1 id="result"></h1>
+
+
+</body>
+</html>

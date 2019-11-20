@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>My Web Page </title> <!-- shows as title in tab and the "!" is what keeps the comment from showing up as text in page-->
+</head>
+
+<body>
+
+    <h1> this is a heading  </h1> <!-- Heading which depreciate in size as you add more like h2,h3, and so on and automatically becomes bold -->
+    <p>
+        <!-- Paragraph -->
+        This is dog named “Bo” is two years old. He
+        lives with us on the ranch. He likes to spend his
+        days at the barn with the horses and his nights
+        watching TV.
+    </p>
+    <center>
+        <!--this centers images-->
+        <img src="../pic/maxresdefault.jpg" width="200" height="200" /><br /><!--the br stacks images-->
+        <img src="../pic/maxresdefault.jpg" width="200" height="200" /><br />
+    </center>
+    zero<br>
+    <br> one<!-- Line break no need for closing sign like other tags because its a empty element meaning nothing is going in between the breaks -->
+    <br>two
+    <br>three
+
+    <!--space example: &nbsp creates space and having multiple &nbsp and putting space between them creates more space  -->
+    <br>
+    test &nbsp &nbsp  test
+
+    <h2> this is second heading </h2>
+    <!-- make sure img is a image file-->
+
+    <p>
+        Bo lives with four other dogs. His favorite
+        times of the day are breakfast and lunch.
+    </p>
+    <img src="../pic/maxresdefault.jpg" width="200" height="200" /><!-- without the br the images will be side to side-->
+    <img src="../pic/maxresdefault.jpg" width="200" height="200" /><br />
+    <img src="../pic/pool.jpg" style = "border: 15px" /> <!--adds defualt border-->
+    <img src="../pic/pool.jpg" style="border: 15px solid blue" /> <!--adds defualt border-->
+    <img src="../pic/pool.jpg" style="padding:40px" width="300" height="200" /> <!--mess with space between pictures-->
+    <img src="../pic/pool.jpg" style="opacity:0.50" width="300" height="200" /> <!--affect of the spacing can best be seen when there is a grid of pictures-->
+    <!-- also the opacity affects transparency -->
+    <img src="../pic/pool.jpg" style="border-radius:100px" width="500" height="300" /> <!--mess with picture radius-->
+    <img src="../pic/pool.jpg" style="float:right" width="500" height="300" /><!-- act like text wrapping-->
+    <img src="../pic/pool.jpg" style="position:absolute; top:0px; right:100px; z-index:0" width="200" height="200" />
+    <!-- the absolute places an image at the pixel x, y coordinates like with the top & left -->
+    <!-- the z-index stacks the pictures on top each other -->
+    <img src="../pic/pool.jpg" style="position:absolute; top:150px; right:200px; z-index:1" width="200" height="200" />
+
+    <img src="../pic/pool.jpg" style="-webkit-transform:rotate(90deg); -moz-transform: rotate(90deg);
+        filter: progidDXImageTransformMicrosoftBasic
+        Image(rotation=1);" width="200" height="200" /><!-- roates image-->
+    <!--the code in here specifies to different browser like chrome,firefox, and explorer. if you get rid of certain sections -->
+    <!-- it wont work in certain browsers-->
+
+
+
+    <p>
+        An agility course consists of a set of standard
+        obstacles laid out
+    </p>
+
+    <img src="unnamed.jpg" width="800" height="400" alt="Photo of a car"/><br /> <!--the height and width act as a resolution -->
+    <img src="unnamed.jpg" width="100%" height="100%" /><br /><!--the height and width percentage scales image up and down as window size changes -->
+    <img style="display:block; margin-left:auto; margin-right:auto"
+         src="https://static.pexels.com/photos/248797/pexels-photo-248797.jpeg" width="800" height="400" /><br />
+    <img src="https://cdn.vox-cdn.com/uploads/chorus_asset/file/8385111/mg_e_motion_concept_3.jpg/" alt="Photo of a car" /><!--this generates text for a missing picture isntead of having picture error-->
+
+
+
+</body>
+<!--<body background="pic/giphy.gif">
+</body>-->
+
+</html>

@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script>
+    // Joshua Carpentier
+    // JS4 Collision Detection
+    /*
+   Have a square and move it around by onclick events on buttons. And if the square enters
+   an invisible region, like 100<left<300 and 100<top<300, then change its color to something
+   else. Also detect when the ball hits the wall by using (window.parseInt(ballObj.style.top) >
+   window.innerHeight) or similar tecniques, display the coordinates of the ball as well.
+    */
+
+
+    var vartop = 20;
+    var varleft = 20;
+    var speed = 20;
+    function goRight() {
+        varleft = varleft + speed;
+        var ball = document.getElementById("ball");
+
+        ball.style.left = varleft + "px";
+        moveBall();
+
+
+    }
+
+    function goLeft() {
+        varleft = varleft - speed;
+        var ball = document.getElementById("ball");
+
+        ball.style.left = varleft + "px";
+        moveBall();
+
+    }
+
+
+    function goUp() {
+         vartop = vartop - speed;
+        var ball = document.getElementById("ball");
+
+        ball.style.top = vartop + "px";
+        moveBall();
+
+
+    }
+
+    function goDown() {
+         vartop = vartop + speed;
+        var ball = document.getElementById("ball");
+
+        ball.style.top = vartop + "px";
+        moveBall();
+
+
+    }
+
+    function moveBall() {
+        var ballobj = document.getElementById("ball");
+        if(varleft > window.innerWidth)varleft =0
+        if (varleft < 0) varleft = window.innerWidth;
+        if (vartop < 0) vartop = window.innerHeight;
+        if (vartop > window.innerHeight) vartop = -20;
+
+
+    }
+
+
+
+
+    </script>
+    <style>
+        #ball {
+            background-color: green;
+            width: 50px;
+            height: 50px;
+            border-radius: 250px;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div id="ball"></div>
+    <button onclick="goLeft()">Go Left</button>
+
+    <button onclick="goRight()">Go Right</button>
+
+    <button onclick="goDown()">Go Down</button>
+    <button onclick="goUp()">Go Up</button>
+
+</body>
+</html>

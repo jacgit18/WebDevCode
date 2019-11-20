@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style>
+        p{
+            color:blue;
+        }
+    </style>
+    
+</head>
+<body id="body">
+
+
+
+    <script>
+// adding new elements into html using javascript
+        //with javascript created html elements
+        window.onload = practicetext;//this wait till html loads then run this javascript function
+
+        function practicetext() {
+            /*the function is code that does one or more actions
+            it can be defined accepting multiple commands and contain
+            arguments to be passed in like function practicetext(name, age) {}
+            which allow the code to be reused like this function practicetext(name, age) { alert(name);alert(age);}
+            function is defined and now is being called practicetext(will, 34);
+            which can be done as many times as you want. you can also return values
+            back into the function but can only do one return unless you create something
+            like an if else statement.
+            function add(first, second) { return first + second;}
+            alert(add(1, 2));// alert calling the function.
+            */
+            var paragraph = document.createElement("p");
+            paragraph.id = "para";
+            paragraph.innerHTML = "Outside paragraph";
+
+            var div = document.createElement("div");
+            div.id = "division";
+            div.style.backgroundColor = "red";
+            div.style.paddingTop = "75px";
+            div.style.height = "500px";
+            div.style.width = "50%";
+            div.style.position = "relative";
+            div.style.margin = "0 auto";
+
+            var paragraph2 = document.createElement("p");
+            paragraph2.id = "para2";
+            paragraph2.style.color = "green";
+            paragraph2.innerHTML = "Inside paragraph";
+            //innerhtml is whats between a tag like <p>chicken</p>
+            // the word chicken between the tag is innerhtml
+            // <p id="food">chicken</p> you can use a id and get
+            // the paragraph by its id to add a value to the innerhtml
+            // replace, or remove whats in the innerhtml
+
+            var paragraph3 = document.createElement("p");
+            paragraph3.id = "para3";
+            var text = document.createTextNode("BRAND NEW");
+            //the textnode is the next between the p tag
+            paragraph3.appendChild(text);
+            //The appendChild() method appends a node 
+            //as the last child of the varable paragragh3 in this case.
+            document.body.style.fontSize = "50px";
+
+            document.body.appendChild(div);
+            document.body.appendChild(paragraph);
+            div.appendChild(paragraph2);
+            div.appendChild(paragraph3);
+
+        }
+    </script>
+</body>
+</html>

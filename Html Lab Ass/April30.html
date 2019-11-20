@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script>//JS1dynamic Tip Calculator
+    // try to fix
+        //Joshua Carpentier
+        window.onload = fish;
+        function fish() {
+
+            var fishtext = document.createElement("INPUT");
+            fishtext.type = "TEXT";
+            fishtext.style.color = "green";
+            fishtext.style.backgroundColor = "yellow";
+            fishtext.id = "billamount";
+            document.body.appendChild(fishtext);
+
+            var labelbill = document.createElement("LABEL");
+            labelbill.innerHTML = "Enter the bill amount $";
+
+            var button = document.createElement("INPUT");
+            button.value = "Find Tip";
+            button.onclick = calculate();
+            button.type = "BUTTON";
+
+            var servicelabel = document.createElement("Label");
+            servicelabel.innerHTML = "G-good,a-all right,n-notbad,p-poor";
+
+            var servicetext = document.createElement("INPUT");
+            servicetext.type = "TEXT";
+            servicetext.id = "service";
+
+            document.body.appendChild(labelbill);
+            document.body.appendChild(fishtext);
+            document.body.appendChild(servicelabel);
+            document.body.appendChild(servicetext);
+            document.body.appendChild(button);
+
+        }
+
+
+        function calculate() {
+            var bill = document.getElementById("billamount").value;
+            var service = document.getElementById("service").value;
+            var bill = document.getElementById("billamount").value;
+            var aH2element = document.createElement("h1").value;
+            if (service == "g") {
+                var TextNode = document.createTextNode("the tip is $" + bill * 0.25);
+            } else if (service == "a") {
+                var TextNode = document.createTextNode("the tip is $" + bill * 0.15);
+            } else if (service == "n") {
+                var TextNode = document.createTextNode("the tip is $" + bill * 0.10);
+            } else {
+                var TextNode = document.createTextNode("the tip is $" + bill * 0);
+}
+            aH2element.appendChild(TextNode);
+            document.body.appendChild(aH2element);
+
+        }
+
+
+    </script>
+</head>
+<body id="body">
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script>        //Q4
+        // joshua carpentier
+        function changeContent() {
+            var value = document.getElementById("pulldown").value;
+            history.go(value);
+        }
+
+    </script>
+
+
+
+
+</head>
+<body>
+
+    <select id="pulldown" onchange="changeContent();" style=";">
+        <script>
+
+            for (i = 0; i < history.length; i++){
+                document.writeln("<Option value = "+ i +">"+i + "</Option>");
+            }
+        </script>
+    </select>
+</body>
+</html>

@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title><!-- the .bronx and the .brooklyn are classes no . in front of input because its a tag-->
+    <style>
+        .bronx {
+            background-color: aqua;
+        }
+
+        .brooklyn, li {
+            background-color: deeppink;
+        }
+
+        input {
+            background-color: greenyellow;
+        }
+
+        #abc {/*the # act as a id in css*/
+            background-color: black;
+            color: white;
+        }
+
+        .center {
+            text-align: center;
+            border: 10px dotted green;
+        }
+
+        img.center {
+            border: 20px solid red;
+        }
+
+        p:hover {/*pseudo Class, the hover affects the text when you hover over over text with mouse*/
+            background-color: red;
+            color: orchid;
+            font-size: x-large;
+        }
+
+        img:hover {
+            border: 6px dashed teal;
+            vertical-align: bottom;
+        }
+
+        p:selected, p::selection {
+            color: brown;
+            background-color: darkblue;
+        }
+
+        input:focus {
+            background-color: yellow;
+            color: red;
+        }
+
+        p:first-letter {
+            font-size: 40pt;
+            background-color: darkgray;
+        }
+
+        ol:last-child {
+            border: 7px double brown;
+            background-color: chartreuse;
+        }
+
+
+        li:first-of-type{
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" value="hey" />
+    <img class="center" src="../pic/Car.jpg" />
+    <p class="center"> snow messed up things</p>
+
+    <img class="" src="../pic/Cat.jpg" />
+
+    <input type="button" class="brooklyn" value="hbkk" />
+    <input type="button" class="bronx" value="jjh" />
+    <input type="button" value="jjh" />
+
+    <input type="radio" class="bronx" value="hihoihoh" />
+
+
+    <p class="bronx"> snow messed up things</p>
+    <ol class="bronx">
+        <li>hodhfoids</li>
+        <li>hodhfoids</li>
+        <li style="background-color:khaki">hodhfoids</li>
+
+    </ol>
+
+    <table class="brooklyn" id="abc" border="1">
+        <tr><td>vkjbkjbkblkblblkblk</td></tr>
+    </table>
+
+
+</body>
+</html>

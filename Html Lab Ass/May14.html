@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script>
+        // Joshua Carpentier
+        //JS3 Loan Calculator
+        /*
+        You take out an interest free car loan for $10,000 and, to repay the loan, you have to pay $150/week.
+        Create program using a WHILE loop to calculate the balance due each week until the loan is paid.
+        */
+        window.onload = calculate;
+        function calculate() {
+            var balance = document.getElementById("loan").value;
+            var weekly = document.getElementById("weekly").value;
+            var count = 0;
+            var result = document.getElementById("result");
+
+            while (balance > 0) {
+                if (balance >= 150)
+                    balance = balance - weekly;
+                else balance = balance - balance;
+                count = count + 1;
+                result.innerHTML += "Week: " +count+ ". Balance $" +balance+ "<br/>";
+            }
+        }
+    </script>
+</head>
+<body>
+    <label for="loan">Loan</label>
+    <input type="number" id="loan" />
+
+    <label for="weekly">Weekly</label>
+    <input type="number" id="weekly" />
+    <input type="button" value="calculate" onclick="calculate();" />
+
+    <h1 id="result"></h1>
+
+
+</body>
+</html>

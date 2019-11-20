@@ -1,0 +1,21 @@
+﻿img {
+    border: 15px double dotted orange;
+    /* external style sheet*/
+}
+
+p {
+    color: red;
+    font-family: 'Book Antiqua';
+    background-color: gold;
+}
+
+h1 {
+    color: blue;
+    font-family: Chiller;
+    font-size: x-large;
+}
+
+h2 {
+    font-family: Dubai;
+    font-size: 30px;
+}

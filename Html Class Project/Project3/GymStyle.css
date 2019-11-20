@@ -1,0 +1,67 @@
+﻿body {
+    background-color: lightslategray;
+    background-size: 100% 710px;
+    padding-top: 100px;
+}
+
+h5, h2 {
+    line-height: 5px;
+    padding: 0;
+}
+
+#Reg {
+    position: absolute;
+    z-index: 1;
+    height: 450px;
+    width:420px;
+    left: 20px;
+    margin-top: 25px;
+    border-radius: 10px;
+    background-color: white;
+    opacity: 0.8;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+#Reg input, select {
+        border-radius: 10px;
+    }
+
+#Reg input[id="ZipCode"] {
+            width: 114px;
+        }
+
+
+#Reg input[id="Address"] {
+            width: 345px;
+        }
+#Reg fieldset {
+            width: 360px;
+        }
+
+#content {
+    position: absolute;
+    z-index: 0;
+    height: 500px;
+    width: 470px;
+    left: 400px;
+    margin: auto;
+    background-color: sandybrown;
+}
+
+
+#but {
+    border-radius: 6px;
+    height: 23px;
+    margin-left: 250px;
+    margin-top: 35px;
+    background-color: lightgoldenrodyellow;
+    font-weight: bold;
+}
+
+
+
+#but:hover {
+        background: black;
+        color: white;
+    }

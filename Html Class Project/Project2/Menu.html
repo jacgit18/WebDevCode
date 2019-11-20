@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>My Resturant</title>
+    <meta name="viewport" content="width=device-width, intial-scale=1.0" />
+
+</head>
+<body>
+    <link href="StyleSheet.css" rel="stylesheet" />
+    <div id="container">
+        <div id="header">
+            <h1>The Mess</h1>
+        </div>
+        <form action="http://www.WebsiteDevelopmentBook.com/FormEcho.php" method="post">
+            <input class="left" id="search" name="search_query" type="text" placeholder="Search">
+            <br /> <br />
+            <input class="right" id="button" type="submit" value="Search" /><br /><br />
+        </form>
+        <div id="headernav">
+            <form>
+                <input class="MyButton" type="button" value="About US" onclick="window.location.href = 'AboutUS.html'" />
+            </form>
+
+            <form>
+                <input class="MyButton" type="button" value="Contact US" onclick="window.location.href = 'ContactUS.html'" />
+            </form>
+
+            <form>
+                <input class="MyButton" type="button" value="Home" onclick="window.location.href = 'HtmlProject2.html'" />
+            </form>
+
+            <form>
+                <input class="MyButton" type="button" value="Login/Register" onclick="window.location.href = 'Accounts.html'" />
+            </form>
+
+            <form>
+                <input class="MyButton" type="button" value="Menu" onclick="window.location.href = 'Menu.html'" />
+            </form>
+        </div>
+
+        <div id="content">
+            <center>
+                <form name="myForm" action="http://www.WebsiteDevelopmentBook.com/FormEcho.php" method="post">
+
+                    <fieldset class="feild">
+                        <legend><b>Menu</b> </legend>
+                        <hr>Menu Table<hr />
+                       
+                        <TABLE >
+                            <TR><Th>Breakfast</Th><Th>Price</Th><TR>
+                            <TR ><TD>Eggs</TD> <TD> $2.50</TD><TD><dl><dd>Fresh non-factory farm</dd></dl></TD></TR>
+                            <TR><TD>Pancakes</TD> <TD> $3.50</TD><TD><dl><dd>Gluten free</dd></dl></TD></TR>
+                            <TR><TD>Eggs & Sausage</TD> <TD> $4.50</TD><TD><dl><dd>Vegan Sausage</dd></dl></TD></TR>
+                        </TABLE>
+                 <br/>
+                        <TABLE  >
+                            <TR><Th>Lunch</Th><Th>Price</Th></TR>
+                            <TR><TD>Ramen</TD> <TD> $5.00</TD><TD><dl><dd>Contains Soba(Buckwheat)</dd></dl></TD></TR>
+                            <TR><TD>Burger</TD> <TD> $3.50</TD><TD><dl><dd>Potato buns</dd></dl></TD></TR>
+                            <TR><TD>Chicken Wrap</TD> <TD> $4.50</TD><TD><dl><dd>Suated with peanuts</dd></dl></TD></TR>
+
+                        </TABLE>
+                        <br />
+                        <TABLE>
+
+                            <TR><Th>Dinner</Th><Th>Price</Th></TR>
+                            <TR><TD>Rice with fish</TD> <TD> $7.00</TD><TD><dl><dd>Covered in a oaster sauce</dd></dl></TD></TR>
+                            <TR><TD>Steamed lobster</TD> <TD> $14.50</TD><TD><dl><dd>Contains mushrooms</dd></dl></TD></TR>
+                            <TR><TD>Crab</TD> <TD> $10.50</TD><TD><dl><dd> With stew</dd></dl></TD></TR>
+                        </TABLE>
+
+                    </fieldset><br />
+                </form>
+            </center>
+           
+
+
+        </div>
+
+    </div>
+
+    <div id="footer">
+
+        <a href="ContactUS.html">Contact US</a>
+        <a href="#">Scroll to Top</a>
+
+
+    </div>
+
+</body>
+</html>

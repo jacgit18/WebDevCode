@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script>//Joshua Carpentier // JS2 Dynamic Grade Converter
+        window.onload = prepare;
+
+        function prepare() {
+            var label = document.createElement("LABEL");
+            label.htmlFor = "grade";
+            label.innerHTML = "enter your grade please";
+
+            var gradeinput = document.createElement("INPUT");
+            gradeinput.type = "number";
+            gradeinput.id = "grade";
+
+            var button = document.createElement("INPUT");
+            button.value = "Get your letter grade now";
+            button.type = "button";
+            button.onclick = calculate;
+
+            var h2display = document.createElement("H1");
+            h2display.id = "display";
+            h2display.style.color = "RED";
+            h2display.onclick = clean;
+
+            document.body.appendChild(label);
+            document.body.appendChild(gradeinput);
+            document.body.appendChild(button);
+            document.body.appendChild(h2display);
+
+        }
+
+        function calculate() {
+            var display = document.getElementById("display");
+            var lettergrade = document.getElementById("grade");
+
+            if (lettergrade.value >= 90) {
+                display.innerHTML = "you got A grade";
+                document.body.style.backgroundColor = "green";
+                display.style.color = "yellow";
+                //alert("you got A grade")
+            } else if (lettergrade.value >= 80) {
+                display.innerHTML = "you got B grade";
+                document.body.style.backgroundColor = "blue";
+                display.style.color = "green";
+
+                //alert("you got B grade")
+            } else if (lettergrade.value >= 70) {
+                display.innerHTML = "you got C grade";
+                document.body.style.backgroundColor = "yellow";
+                display.style.color = "blue";
+
+                //alert("you got C grade")
+
+            } else if (lettergrade.value >= 60) {
+                display.innerHTML = "you got D grade";
+                document.body.style.backgroundColor = "orange";
+                display.style.color = "green";
+
+                //alert("you got D grade")
+
+            } else {
+                display.innerHTML = "you got F grade";
+                document.body.style.backgroundColor = "red";
+                display.style.color = "black";
+
+                //alert("you got f grade")
+            }
+
+        }
+
+
+        function clean() {
+            var bird = document.getElementById("display");
+            document.body.removeChild(bird);
+
+        }
+    </script>
+
+</head>
+<body id="body">
+
+</body>
+</html>

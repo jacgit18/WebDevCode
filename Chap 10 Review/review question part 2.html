@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script>//Joshua Carpentier
+        //Q4
+        var brooklyn = new Date; alert(brooklyn);
+
+        //Q5 
+        var q5 = new Array;
+        q5 =['google.com', 'Amazon.com','yahoo.com' ]
+        
+        //Q6
+        alert(findmax(66, 44));
+        function findmax(A, B) {
+            if (A > B)
+                return A;
+            else
+                return B;
+        }
+        //Q7
+        // Local Vairable is a vairable declared in 
+        // function & can only be accessed in function
+        function myFunction1() {
+            var cpuBrand = "Amd";
+        }
+
+        //Global Vairable is a vairable declared outside
+        // a function & can be accessed by All scripts 
+        // and functions on a web page
+        var cpuBrand = " Intel";
+        function myFunction2() {
+
+        }
+        //Q8
+        function validate() {
+            if (myForm.name.value == null || myForm.name.value == "") {
+                alert("put name")
+                return false;
+            }
+            if (myForm.phone.value == null || myForm.phone.value == "") {
+                alert("forgot phone")
+                return false;
+            }
+            if (myForm.email.value == null || myForm.email.value == "") {
+                alert("put email")
+                return false;
+            }
+            return true;
+        }
+
+        //Q9. The String object lets 
+        // you work with a series of characters 
+        // and can utilize string properties and methods
+        // var computerBrand = "Msi";
+        //Q10
+        var abc = new String;
+        abc = "hey how are you";
+        alert(abc.length);
+        function dog(name, breed, age) {
+            this.name = name;
+            this.breed = breed;
+            this.age = age;
+        }
+
+        var poppy = new dog("luffy", "husky", 3)
+        alert(poppy.breed);
+
+
+    </script>
+</head>
+<body>
+    <!--Q8 Part 2-->
+    <form action="http://www.WebsiteDevelopmentBook.com/FormEcho.php" method="post"
+          onsubmit="return ValidateForm()" name="myForm">
+        Name:<input type="text" name="name" /><br />
+        Phone<input type="text" name="phone" /><br />
+        Email:<input type="text" name="email" /><br />
+        <input type="submit" onclick="validate();" value="Click" /><br />
+    </form>
+</body>
+</html>

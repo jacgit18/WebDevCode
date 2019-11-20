@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script>//Q5 joshua carpentier
+        function movetopleft() {
+            var mywindow = Object(window);
+            mywindow.moveTo(0, 0);
+            setInterval(function () { movebuttomleft(); }, 3000);
+        }
+
+        function movebottomleft() {
+            var mywindow = Object(window);
+            mywindow.moveTo(0, 300);
+            setInterval(function () { movetopright(); }, 3000);
+        }
+
+        function movetopright() {
+            var mywindow = Object(window);
+            mywindow.moveTo(300, 0);
+            setInterval(function () { movebottomright(); }, 3000);
+        }
+
+        function movebottomright() {
+            var mywindow = Object(window);
+            mywindow.moveTo(300, 300);
+            setInterval(function () { movetopleft(); }, 3000);
+        }
+    </script>
+
+
+
+</head>
+<body>
+
+<button onmouseover="movetopleft();">hover here</button>
+
+
+
+</body>
+</html>

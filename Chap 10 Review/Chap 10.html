@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+
+    <script>//can writ this but dont need to <script type="text/javascript">
+       
+        function validate() {
+            if (myForm.name.value == null || myForm.name.value == "") {
+                alert("put name")
+                return false;
+            }
+            if (myForm.phone.value == null || myForm.phone.value == "") {
+                alert("forgot phone")
+                return false;
+            }
+            if (myForm.email.value == null || myForm.email.value == "") {
+                alert("put email")
+                return false;
+            }
+            return true;
+        }
+    </script>
+    <script src="JavaScript.js"></script>
+</head>
+<body>
+    <form>
+    num1:<input type="number" id="num1"/><br/>
+        num2:<input type="number" id="num2" /><br />
+        <input type="button" id="number1 
+        "value="find smallest" 
+        onclick="alert(abc(document.getElementById('num1').value,
+        document.getElementById('num2').value))"/><br />
+
+    </form>
+    
+
+    <form  action="http://www.WebsiteDevelopmentBook.com/FormEcho.php" method="post"
+           onsubmit="return ValidateForm()" name="myForm">
+        Name:<input type="text"name="name" /><br />
+        Phone<input type="text" name="phone" /><br />
+        Email:<input type="text" name="email" /><br />
+        <input type="submit" onclick="validate();" value="Click" />
+              < br />
+
+    </form>
+
+
+
+</body>
+</html>

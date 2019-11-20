@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script>//JS1 try fixing
+        function calculate() {
+            var bill = parsefloat(document.getElementById("bill").value);
+            var body = document.getElementById("body");
+
+            if (!Number(bill))
+                body.innerHTML += "<h1>Bad bill amount. Please enter a numeric</h1>";
+
+            else {
+                var services = document.getElementById("services").value;
+            }
+
+            var tip = 0;
+
+            if (services == "g") {
+                tip = 0.25;
+                body.className = "good";
+                
+
+            } else if (services == 'a') {
+                tip = 0.15;
+                body.className = "allright";
+            } else if (services == 'n') {
+                tip = 0.1;
+                body.className = "notbad";
+            }
+            else if (services == 'p') {
+                tip = 0;
+                body.className = "poor";
+            } else {
+                tip = -0.1;
+                body.className = "horrible";
+            }
+
+            if (tip >= 0) {
+                document.getElementById("body").innerHTML += "<h1>The tip you should give is $" + bill * tip + "</h1>";
+            } else document.getElementById("body").innerHTML += "<h1>The resturant  should give you $" + bill * tip * (-1) + "back, because the service was horrible.</h1>";
+
+        }
+
+    </script>
+    <style>
+                .good {
+            background-color: darkseagreen;
+        }
+
+        .all {
+            background-color: dodgerblue;
+        }
+
+        .notbad {
+            background-color: lightpink;
+        }
+
+        .poor {
+            background-color: slategrey;
+        }
+
+        .horrible {
+            background-color: red;
+        }
+    
+    </style>
+
+</head>
+<body id="body"><!--Joshua Carpentier-->
+
+        Bill Amount:<input type="number" id="bill" name="bill" /><br />
+        Service(G-good, A-all right, N-not bad, P-poor )<input type="text" id="services" name="services " /><br />
+        <input type="submit" onclick="calculate();" value="find tip" /><br />
+</body>
+</html>

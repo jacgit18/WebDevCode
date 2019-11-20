@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>My Resturant</title>
+    <meta name="viewport" content="width=device-width, intial-scale=1.0" />
+    <script type="text/javascript">
+        function check_info() {
+            var username = document.getElementsById(username).value;
+            var password = document.getElementsById(password).value;
+
+            if (username == "" || password == "") {
+                alert('fill in all fields')
+                return false;
+            }
+
+            else {
+                return true;
+            }
+        }
+    </script>
+</head>
+<body>
+    <link href="StyleSheet.css" rel="stylesheet" />
+    <div id="container">
+        <div id="header">
+            <h1>The Mess</h1>
+        </div>
+        <form action="http://www.WebsiteDevelopmentBook.com/FormEcho.php" method="post">
+            <input class="left" id="search" name="search_query" type="text" placeholder="Search">
+            <br /> <br />
+            <input class="right" id="button" type="submit" value="Search" /><br /><br />
+        </form>
+        <div id="headernav">
+            <form>
+                <input class="MyButton" type="button" value="About US" onclick="window.location.href = 'AboutUS.html'" />
+            </form>
+
+            <form>
+                <input class="MyButton" type="button" value="Contact US" onclick="window.location.href = 'ContactUS.html'" />
+            </form>
+
+            <form>
+                <input class="MyButton" type="button" value="Home" onclick="window.location.href = 'HtmlProject2.html'" />
+            </form>
+
+            <form>
+                <input class="MyButton" type="button" value="Login/Register" onclick="window.location.href = 'Accounts.html'" />
+            </form>
+
+            <form>
+                <input class="MyButton" type="button" value="Menu" onclick="window.location.href = 'Menu.html'" />
+            </form>
+        </div>
+
+
+        <div id="content">
+            <center>
+                <form action="http://www.WebsiteDevelopmentBook.com/FormEcho.php" method="post" onsubmit="return check_info()" >
+
+                    <fieldset class="feild">
+                        <legend><b>Existing Account</b> </legend>
+                        <label for="user">Username:</label> <input type="text" id="username" name="username" /><br />
+                        <label for="pass"> Password:</label> <input type="password" id="password" name="password" /><br />
+
+                        <input type="submit" value="Click to Submit" />
+                    </fieldset><br />
+                </form>
+            </center> 
+
+
+            <center>
+                <form name="myForm" action="http://www.WebsiteDevelopmentBook.com/FormEcho.php" method="post">
+
+                    <fieldset class="feild">
+                        <legend><b>Create New Account</b> </legend>
+
+                        <input type="submit" value="Create New Account" />
+                    </fieldset><br />
+                </form>
+            </center> 
+        </div>
+
+    </div>
+
+    <div id="footer">
+
+        <a href="ContactUS.html">Contact US</a>
+        <a href="#">Scroll to Top</a>
+
+
+    </div>
+
+</body>
+</html>

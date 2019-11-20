@@ -1,0 +1,279 @@
+﻿html, body {
+    background-color: black;
+    margin:0;
+    width:100%;
+    height:100%; 
+        background: url('../../pic/noface.png');
+
+}
+
+*{
+    margin:0;
+    padding:0;
+    list-style:none;
+    text-decoration:none;
+}
+
+/*used to adjust for device screen*/
+@media screen and (max-width:1919px) {
+    #container {
+        width: 100%;
+    }
+
+    #header {
+        width: 100%;
+    }
+
+    #headernav {
+        width: 100%;
+    }
+
+
+
+    #content {
+        width: 100%;
+    }
+
+    #footer {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:640px) {
+
+    #header {
+        width: 100%;
+    }
+
+    #headernav {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:320px) {
+
+    #container {
+        width: 320px;
+    }
+}
+
+div {
+    margin: 3px;
+    width: 50px;
+    height: 50px;
+}
+
+
+#container {
+    width: 100%;
+    height: 1080px;
+    margin: 0px auto;
+    margin-top:20px;
+    margin-bottom: 10px;
+}
+/*slides */
+.slider{
+    overflow:hidden;
+    height:500px;
+
+}
+
+.slider figure div{
+width:20%;
+float:left;
+}
+
+.slider figure img{
+    width:100%;
+
+    height:300px;
+    float:left;
+
+}
+
+.slider figure {
+    position:relative;
+    width:500%;
+    margin:0;
+    left:0;
+    animation: 45s slidy infinite;
+
+}
+
+@keyframes slidy{
+    0%{
+        left:0%;
+    }
+    10%{
+        left:0%;
+    }
+    12%{
+        left:-100%;
+    }
+    22%{
+        left:-100%;
+    }
+    24%{
+        left:-200%;
+    }
+    34%{
+        left:-200%;
+    }
+    36%{
+        left:-300%;
+    }
+    46%{
+        left:-300%;
+    }
+    48%{
+        left:-400%;
+    }
+    58%{
+        left:-400%;
+    }
+    60%{
+        left:-300%;
+    }
+     70%{
+        left:-300%;
+    }
+      72%{
+        left:-200%;
+    }
+       82%{
+        left:-200%;
+    }
+ 84%{
+        left:-100%;
+    }
+
+ 94%{
+        left:-100%;
+    }
+ 96%{
+        left:0%;
+    }
+}
+
+
+#search {
+    z-index: 2;
+    width: 50%;
+    left: 25%;
+    top: 130px;
+    position: absolute;
+}
+
+#header {
+    position: absolute;
+    z-index: 0;
+    width: 1920px;
+    height: 120px;
+    top: 0px;
+    left: 0px;
+    background: repeating-linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9) 10px, rgba(0, 0, 0, 0.1) 10px, rgba(0, 0, 0, 0.1) 25px ), url(http://s3-us-west-2.amazonaws.com/s.cdpn.io/3/old_map_@2X.png);
+    
+}
+
+.feild{
+    background-color:#6f0101;
+     opacity:0.7; 
+     width:720px; 
+     border:solid 3px gold; 
+     font-size:20px; 
+     color:gold;
+
+
+
+}
+table{
+     background-color:transparent;
+     text-align:center; 
+     height:150px; 
+     width:400px;
+}
+
+h1 {
+    text-align: center;
+    font: bold;
+    font-size: 75px;
+    margin-top: 1px;
+    font-family: Broadway;
+    color: black;
+    opacity: 100;
+    border: dotted 20.3px gold;
+}
+
+h1:hover {
+    text-shadow: 0 0 10px rgba(242,22,22,1), 0 0 20px rgba(242,22,22,1), 0 0 30px rgba(242,22,22,1), 0 0 40px #fff, 0 0 70px #fff, 0 0 80px #fff, 0 0 100px #ffff07;
+    border-color: #ffff07;
+    box-shadow: #ffff07;
+}
+
+#headernav {
+    position: absolute;
+    z-index: 1;
+    width: 1920px;
+    height: 60px;
+    top: 50px;
+    left: 0px;
+    margin-top: 105px;
+    background: repeating-linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9) 10px, rgba(0, 0, 0, 0.1) 10px, rgba(0, 0, 0, 0.1) 25px ), url(http://s3-us-west-2.amazonaws.com/s.cdpn.io/3/old_map_@2X.png);
+}
+
+#button {
+    background-color: gold;
+    border: #6f0101;
+    position: absolute;
+    top: 130px;
+    left: 21.3%;
+    z-index: 2;
+}
+
+
+
+input.MyButton {
+    font-family: Elephant;
+    height: 60px;
+    width: 384px;
+    padding: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 150%;
+    background: #6f0101;
+    color: #fff;
+    border: dotted 3px black;
+    border-radius: 10px;
+    -moz-box-shadow:: 6px 6px 5px #999;
+    -webkit-box-shadow:: 6px 6px 5px #999;
+    box-shadow:: 6px 6px 5px #999;
+    float: left;
+}
+
+input.MyButton:hover {
+    text-shadow: 0 0 10px rgba(242,22,22,1), 0 0 20px rgba(242,22,22,1), 0 0 30px rgba(242,22,22,1), 0 0 40px #ff0000, 0 0 70px #ff0000, 0 0 80px #ff00de, 0 0 100px #ff00de;
+    background: black;
+    border: dotted 3px gold;
+}
+
+#content {
+    background-color: transparent;
+  /*  border: ridge gold 5px;*/
+    position: absolute;
+    width: 1920px;
+    height: 786px;
+    top: 110px;
+    left: 0px;
+    margin-top: 10em;
+}
+
+
+#footer {
+    background-color: moccasin;
+    width: 1920px;
+    height: 150px;
+    clear: both;
+    top: 40em;
+    left: 0;
+}
+

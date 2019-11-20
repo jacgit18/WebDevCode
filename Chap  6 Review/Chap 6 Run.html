@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body style="background-color:sandybrown">
+
+    <form action="http://www.WebsiteDevelopmentBook.com/FormEcho.php" method="post">
+        City: <select name="cities">
+            <optgroup label="Arizona">
+                <option>Phoenix</option>
+                <option>Prescott</option>
+                <option>Tucson</option>
+            </optgroup>
+            <optgroup label="California">
+                <option>Los Angeles</option>
+                <option>San Francisco</option>
+                <option>San Diego</option>
+            </optgroup>
+        </select>
+        <input type="file" name="resume" /><!-- upload files-->
+        <input type="hidden" name="IP" value="17.33.44.22" /><!--submits data to remote server & displays inputs -->
+        <fieldset style="background-color:fuchsia">
+            <label for="firstname"> First Name:</label><input type="text" />
+        </fieldset>
+    </form>
+
+    <img src="../pic/Ball.jpg" />
+    <form action="http://www.WebsiteDevelopmentBook.com/FormEcho.php" method="post">
+        Username:<input type="text" name="Username" maxlength="2" /><!--limits amount of letters in username-->
+        Password:<input type="password" name="Password" /><br />
+        <textarea rows="7" cols="19" name="textbox"></textarea>
+        Male:<input type="radio" name="Gender" value="Male" /><!-- fill in circle that alternate when clicked-->
+        Female:<input type="radio" name="Gender" value="Female" />
+        <input type="number" />
+        <input type="datetime-local" />
+
+        <br />Cheese:<input type="checkbox" checked="checked" name="Cheese" /><!--always checked-->
+        Veggie:<input type="checkbox" name="Veggie" />
+        Spicy:<input type="checkbox" name="Spicy" />
+        Sweet:<input type="checkbox" name="Sweet" />
+        Dinner Choice: <select name="DinnerChoice[]" multiple>
+            <!-- lets you select multiple when you press crtl-->
+            <option>Pizza</option>
+            <option>Pasta</option>
+            <option>Burgers</option>
+        </select>
+        <br /><input type="submit" value="Enter" />
+        <input type="reset" value="Reset" />
+        <button> <img src="../pic/Cat.jpg" /> </button>
+
+    </form>
+
+    <hr>Review Question<hr />
+    <form action="mailto:Joshuacarpentier21@gmail.com" method="post"></form>    <!-- opens email-->
+    <!--Joshua Carpentier--><!-- how use multiple actions in one form-->
+    <form action="http://www.WebsiteDevelopmentBook.com/FormEcho.php" method="post">
+        1. Create an HTML file that uses a form to prompt a user for his or her name, age, and favorite
+        website. The form should submit its contents to http://www.websitedevelopmentbook.com
+        /FormEcho.php.
+        /////////////////////////////////////////////////////////////////////////////////////////////
+        2. Modify the HTML file you created in Question 1 to group the field elements using the
+        "fieldset" and "/fieldset" tag pair.
+        //////////////////////////////////////////////////////////////////////////////////////////////
+        3. Modify the HTML file that you created in Question 1 to mail the form results to your e-mail
+        address.
+        <fieldset style="background-color:fuchsia"><legend><b>Personal Info:</b> </legend>
+            <label for="full">Full Name:</label> <input type="text" id="fullname" name="fullname" /><br />
+            <label for="age"> Age:</label> <input type="text" id="age" name="age" /><br />
+            <label for="website"> Fav Site:</label> <input type="text" id="website" name="website" /><br />
+            Username: <input type="text" name="username" />
+            <br /><br />
+            E-Mail: <input type="text" name="e-mail" />
+            <br /><br />
+            <input type="submit" value="Click to Submit" />
+        </fieldset><br />
+
+        4. Create an HTML form that uses radio buttons to prompt the user for his or her favorite type
+        of pet: dog, cat, fish, or horse. The form should submit its contents to http://www.
+        websitedevelopmentbook.com/FormEcho.php.
+        <br />Fav Pet:<br />
+        Dog:<input type="radio" name="pet" id="pet" value="dog" />
+        Cat:<input type="radio" name="pet" id="pet" value="cat" />
+
+        <br />
+        5. Create an HTML form that prompts a user for his or her name and then lets the user paste
+        his or her résumé into a text area. The form should submit its contents to http://www.
+        websitedevelopmentbook.com/FormEcho.php.<br />
+        <label for="resumebox">Resume:</label><br />
+
+        <textarea maxlength="2000" cols="10" rows="10" id="resumebox" name="resume"></textarea><br /><input type="submit" value="Submit" /><br/>
+        <label for="resume">Upload Resume:</label> <!-- the label is different from just writing something before the text box-->
+        <!--when you click the label it highlights the textbox-->
+        <input type="file" id="resume" name="resume" /><!-- the id needs to match to for value so the label can identify the text box-->
+
+        <label for="fullname2">Full Name:</label>
+        <input type="text" id="fullname2" name="fullname" /><br />
+
+        6. Create a form that prompts a user for his or her favorite sport using a pull-down list. The
+        list should include at least 10 sports. The form should submit its contents to http://www.
+        websitedevelopmentbook.com/FormEcho.php.
+        Fav Sport: <select name="favsports">
+            <option></option>
+            <optgroup label="MMA">
+                <option>JuJitsu</option>
+                <option>Boxing</option>
+                <option>Judo</option>
+            </optgroup>
+            <optgroup label="Winter Sports">
+                <option>Snowboarding</option>
+                <option>Skiing</option>
+                <option>Curling</option>
+            </optgroup>
+            <optgroup label="Olympic Sports">
+                <option>Track</option>
+                <option>Diving</option>
+                <option>Hockey</option>
+            </optgroup>
+        </select>
+        <input type="submit" value="Enter" />
+        <input type="reset" value="Reset" />
+        <input type="hidden" name="IP" value="17.33.44.22" />
+    </form>
+
+
+</body>
+</html>

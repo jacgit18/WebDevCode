@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Chapter 3</title>
+
+</head>
+
+<body>
+    <!-- Joshua Carpentier-->
+    <a name="#Top"></a>
+
+    <h1>Chapter 3 review Questions</h1>
+    <a href="#Question 6">go to question 6</a>
+
+    <p>
+        1. Using an HTML "a" tag and "/a" anchor tag pair, create a text-based hyperlink to this book’s
+        publisher, Jones & Bartlett Learning, at http://www.jblearning.com.
+        <a href="http://www.jblearning.com" target="new">Jb Learning</a>
+    </p>
+
+    <p>
+        2. Using an HTML "a" tag and "/a" anchor tag pair, and the image file at http://www.websitedevelopmentbook.com/Chapter03/book.jpg,
+        create an imagebased hyperlink to this book’s publisher, Jones & Bartlett Learning at http://www.jblearning.com<br />
+        <a href="http://www.jblearning.com" target="new"><img src="http://www.websitedevelopmentbook.com/Chapter03/book.jpg" height="280" width="340"></a>
+    </p>
+
+    <p>
+        3. Create an HTML file that illustrates the difference between relative and absolute links.
+        <a href="../ContactUs.html"> Contact Us</a>  <!-- Relative Link-->
+        <a href="https://www.youtube.com/" target="new">Youtube</a><br /><br /><!-- Absolute Link-->
+    </p>
+
+    <p>
+        4. Create an HTML file that illustrates the use of the mailto attribute.
+        <a href="mailto:Joshua.Carpentier@mail.citytech.cuny.edu?subject= Check Out This movie!&body=Hey, I think you might like it!"><h1>E-mail Us</h1></a>
+    </p>
+
+    <p>
+        5. Modify the HTML file you created in Question 1 to open the link in a new window.<br />
+        <a href="http://www.jblearning.com" target="_blank"> Jb Learning</a>
+    </p>
+
+    <br><br><br><br><br><br><br>
+    <p>
+        6. Create an HTML file that illustrates the use of an in-page link.
+        <a name="Question 6"></a>
+        <a href="#top">Back to top of page</a>
+    </p>
+
+    <p>
+        7.Using the image file http://www.websitedevelopmentbook.com/Chapter03/Mice.jpg,
+        create an HTML file that uses an image map
+    </p><!--one picture then click on a certain area for different links-->
+        <img src="../pic/Cat.jpg" usemap="#cats" style="height:100px; width:100px;" />
+    <img src="../pic/Dog.jpg" usemap="#dogs"  style="height:100px; width:100px;" />
+    <br /><img src="../pic/Car.jpg" usemap="#pets"  style="height:100px; width:100px;"/>
+    <img src="../pic/giphy.gif" usemap="#kids"  style="height:100px; width:100px;"/>
+
+        <map name="cats">
+            <area alt="text" shape="rect" coords="1,1,200,131"
+                  href="https://www.google.com/search?safe=off&ei=qFK4WoGDO9H0jwP1hqbwCQ&q=cats&oq=cats&gs_l=psy-ab.12..0i67k1j0i20i263k1l2j0i67k1l2j0l2j0i131k1j0j0i131k1.26896.28113.0.32635.4.4.0.0.0.0.193.706.0j4.4.0....0...1c.1.64.psy-ab..0.4.704...35i39k1j0i46i67k1j46i67k1.0.Upwm62aot_g" />
+           
+        </map>
+    
+    <map name="dogs">
+        <area alt="text" shape="rect" coords="1,1,200,131"
+              href="https://www.google.com/search?q=dogs&oq=dogs&aqs=chrome..69i57j0l5.5744j0j7&sourceid=chrome&ie=UTF-8" />
+
+    </map>
+
+    <map name="pets">
+        <area alt="text" shape="rect" coords="1,1,200,131"
+              href="https://www.google.com/search?safe=off&ei=8FK4WqnVFMz8jwO8_rWQCQ&q=petland&oq=petl&gs_l=psy-ab.1.0.0i131i67k1j0i67k1l2j0i131i67k1j0i20i263k1j0j0i67k1j0j0i131k1j0i67k1.6034.7132.0.8169.2.2.0.0.0.0.173.333.0j2.2.0....0...1c.1.64.psy-ab..0.2.333...35i39k1.0.azRLOM1C2F8" />
+
+    </map>
+
+    <map name="kids">
+        <area alt="text" shape="rect" coords="1,1,200,131"
+              href="https://www.google.com/search?safe=off&ei=-lK4WqmeDITMjwOC5JOADw&q=kid+choice+awards+2018&oq=kid+c&gs_l=psy-ab.1.0.0i131k1l2j0i3k1j0l2j0i131k1j0l4.107406.113205.0.114284.7.6.1.0.0.0.168.930.0j6.6.0....0...1c.1.64.psy-ab..0.7.972...35i39k1j0i131i67k1j0i67k1j0i10k1.0.Gvo_iNynVeI" />
+
+    </map>
+
+
+    <!--<map name=”sports”>
+<area shape=”rect” coords=”1,1,200,131”
+href=”http://www.nhl.com”/>
+<area shape=”rect” coords=”201,1,400,131”
+href=”http://www.mlb.com”/>
+<area shape=”rect” coords=”1,132,201,262”
+href=”http://www.nba.com”/>
+<area shape=”rect” coords=”201,132,400,262”
+href=”http://www.nfl.com”/> 
+-->
+
+</body>
+</html>

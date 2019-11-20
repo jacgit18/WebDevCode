@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script>window.onload = form;
+        function form() {
+
+            var div = document.createElement("div");
+            div.id = "division";
+            div.style.backgroundColor = "red";
+            div.style.paddingTop = "75px";
+            div.style.height = "500px";
+            div.style.width = "50%";
+            div.style.position = "relative";
+            div.style.margin = "0 auto";
+
+            var myform = document.createElement("form");
+            form.id = "gymform";
+            myform.style.height = "400px";
+            myform.style.width = "50%";
+            myform.style.backgroundColor = "blue";
+            myform.style.position = "relative";
+            myform.style.margin = "0 auto";
+
+
+            var Firstname = document.createElement("input");
+            Firstname.type = "text";
+            Firstname.placeholder = "Firstname";
+            Firstname.id = "fname";
+            Firstname.style.width = "114px";
+
+            var Lastname = document.createElement("input");
+            Lastname.type = "text";
+            Lastname.placeholder = "Lastname";
+            Lastname.id = "lname";
+            Lastname.style.width = "114px";
+
+            var phone = document.createElement("input");
+            phone.type = "tel";
+            phone.placeholder = "Phone";
+            phone.id = "phonenum";
+            phone.style.width = "114px";
+
+            var email = document.createElement("input");
+            email.type = "email";
+            email.placeholder = "Email";
+            phone.id = "email";
+            email.style.width = "114px";
+
+
+            document.body.style.backgroundColor = "yellow";
+            document.body.appendChild(div);
+            div.appendChild(myform);
+            myform.appendChild(Firstname);
+            myform.appendChild(Lastname);
+            myform.appendChild(phone);
+            myform.appendChild(email);
+
+
+        }
+
+        function changediv() {
+            var display = document.getElementById("division");
+            
+           
+
+        }
+
+    </script>
+
+
+
+</head>
+<body id="body">
+
+</body>
+</html>

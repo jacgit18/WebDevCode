@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <!--the table has a row then one td then a td with a table with more content in it-->
+    <table border="1" frame="lhs;Rhs;Above;Below" style="color:red;text-align:center" cellspacing="20" height="500" width="500" >
+        <TR style="background-color:lightgray">
+            <TD >1</TD>
+            <TD>
+                2
+                <table border="1"><!-- nested table -->
+                    <TR><TD>honda</TD><TD>nissan</TD></TR>
+                    <TR><TD><img src="../pic/cat.jpg" width="300" height="150" /></TD><TD>sentra</TD></TR>
+                </table>
+            </TD>
+        </TR>
+
+        <TR style="background-color:pink"><TD>3</TD><TD style="text-align:right">like reading</TD></TR>
+        
+        <!-- add something in between-->
+    </table><br/>
+    <table border="1" style="color:blue; font-weight:600"></table>
+    <table style="text-align:left; border-collapse:collapse;"border="1" cellpadding="4" ><!-- Stay aware of Table order-->
+
+        <tr valign="bottom" ><!--Table Rows -->
+        <th style="background-color:chartreuse">Item</th><!-- Table Header-->
+        <th style="background-image:url(../pic/Cat.jpg)">Price</th>
+            <th style="color:red">Quantity</th>
+            <th>Aisle Number</th>
+        </tr>  
+
+        <tr><!--Next Table Rows -->
+            <td colspan="2" style="border:dashed thin" height="100" width="100" >Milk</td><!--Next Table data -->
+            <td style="border: groove thick">$3.00</td>
+            <td style="border:ridge unset">1</td>
+            <td style="border:ridge">A1</td>
+        </tr>
+
+        <tr>
+            <!--Next Table Rows -->
+            <td rowspan="2" style="border:dashed thin" >Eggs</td><!--Next Table data -->
+            <td style="border: groove thick">$4.00</td>
+            <td style="border:ridge unset">2</td>
+            <td style="border:ridge unset">A2</td>
+        </tr>
+
+        <tr>
+            <!--Next Table Rows -->
+            <td style="border:dashed thin">yogurts</td><!--Next Table data -->
+            <td style="border: groove thick">$1.00</td>
+            <td style="border:ridge unset">3</td>
+            <td style="border:ridge">A3</td>
+        </tr>
+        <caption>March Sales</caption>
+
+    </table>
+
+
+    <table border="1">
+        <thead style="background: Orange">
+            <tr>
+                <th>
+                    City
+                </th>
+                <th>Paper</th>
+            </tr>
+        </thead>
+        <tbody style="background: LightBlue">
+            <tr><td>Phoenix</td><td>Arizona Republic</td></tr>
+            <tr>
+                <td>San Francisco</td>
+                <td>
+                    San Francisco
+                    Chronicle
+                </td>
+            </tr>
+            <tr><td>New York</td><td>New York Times</td></tr>
+        </tbody>
+        <tfoot style="background: Yellow">
+            <tr>
+                <td>
+                    Optional
+                    Table Footer
+                </td>
+            </tr>
+        </tfoot>
+
+    </table>
+
+    <table border="1" cellpadding="10" >
+        <tr>
+            <th style="background-color:orange">Orange</th>
+            <th style="background-color:yellow">Yellow</th>
+            <th style="background-color:lightblue">Light blue</th>
+    </table>
+
+    <br />
+
+    <table border="1" >
+        <tr>
+            <th style="background-color:orange">Orange</th>
+            <th style="background-color:yellow">Yellow</th>
+            <th style="background-color:lightblue">Light blue</th>
+    </table>
+
+    <br />
+
+    <table border="1" cellspacing="10">
+        <tr>
+            <th style="background-color:orange">Orange</th>
+            <th style="background-color:yellow">Yellow</th>
+            <th style="background-color:lightblue">Light blue</th>
+    </table>
+
+    <br />
+
+</body>
+</html>

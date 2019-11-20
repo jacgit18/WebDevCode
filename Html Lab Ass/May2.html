@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+<script>    //Joshua Carpentier
+    // JS2b  Dynamic Grade Converter
+    /*
+    Create the same program that converts a numeric grade to a letter grade, using "createElement", "createTextNode", 
+    "appendChild" methods. Also put a button to clean the h2 elements that were inserted in the document using "removeChild"
+    method.The user should be able to enter a numeric grade from 0 to 100. The program will calculate the letter grade based 
+    on : A >= 90; 80<= B < 90; 70<= C < 80; 60 <= D < 70; F <60)
+    */
+
+    function CleanIt() {
+        var parent = document.getElementById("body");
+        var child = document.getElementById("display");
+        parent.removeChild(child);
+    }
+
+    function getGrade() {
+        var TextNode = document.createElement("H1");
+        TextNode.id = "display";
+        var grade = document.getElementById("percentGrade").value;
+
+        if(grade >= 90)
+            TextNode.innerHTML = grade + " will get you A";
+
+        else if (grade >= 80)
+            TextNode.innerHTML  = grade + " will get you B";
+
+        else if (grade >= 70)
+            TextNode.innerHTML  = grade + " will get you C";
+
+        else if (grade >= 60)
+            TextNode.innerHTML  = grade + " will get you D";
+
+        else 
+            TextNode.innerHTML  = grade + " will get you F";
+        document.body.appendChild(TextNode);
+    }
+
+</script>
+</head>
+<body id="body">
+    <input type="text" id="percentGrade" /><br/>
+    <input type="button" value="Letter Grade" onclick="getGrade()"/><br />
+    <input type="button" value="Clean" onclick="CleanIt();" />
+
+
+
+</body>
+</html>

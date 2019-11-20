@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+
+
+</head>
+<body>
+    <h2 >Please guess a number 0-100</h2><br/>
+    <input id="guess" type="number" />
+    <input id="button" type="button" onclick="answer();" value="try your luck"/>
+    <h1 id="display"></h1><br />
+
+
+
+
+    <script>window.onload = answer;
+        var count = 0;
+        var secretnum = Math.floor(Math.random() * 100);
+
+        function answer() {
+            var display = document.getElementById("display");
+            var guess = document.getElementById("guess").value;
+
+            if (guess == secretnum) {
+                count++;
+                display.innerHTML = "you got it it only took you " + count.toString(); + " times" + "the secret number was"
+                + secretnum.toString();
+
+            } else if (guess > secretnum) {
+                count++;
+                display.innerHTML = "go lower you only tried " + count.toString(); + "times, the secret number was"
+                + secretnum.toString();
+            }
+            else {
+                display.innerHTML = "go higher you only tried" + count.toString(); + "the secret number was"
+                + secretnum.toString();
+
+            }
+
+        }
+
+    </script>
+</body>
+</html>

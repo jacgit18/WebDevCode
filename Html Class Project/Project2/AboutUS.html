@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>My Resturant</title>
+    <meta name="viewport" content="width=device-width, intial-scale=1.0" />
+
+</head>
+<body>
+    <link href="StyleSheet.css" rel="stylesheet" />
+    <div id="container">
+        <div id="header">
+            <h1>The Mess</h1>
+        </div>
+        <form action="http://www.WebsiteDevelopmentBook.com/FormEcho.php" method="post">
+            <input class="left" id="search" name="search_query" type="text" placeholder="Search">
+            <br /> <br />
+            <input class="right" id="button" type="submit" value="Search" /><br /><br />
+        </form>
+        <div id="headernav">
+            <form>
+                <input class="MyButton" type="button" value="About US" onclick="window.location.href = 'AboutUS.html'" />
+            </form>
+
+            <form>
+                <input class="MyButton" type="button" value="Contact US" onclick="window.location.href = 'ContactUS.html'" />
+            </form>
+
+            <form>
+                <input class="MyButton" type="button" value="Home" onclick="window.location.href = 'HtmlProject2.html'" />
+            </form>
+
+            <form>
+                <input class="MyButton" type="button" value="Login/Register" onclick="window.location.href = 'Accounts.html'" />
+            </form>
+
+            <form>
+                <input class="MyButton" type="button" value="Menu" onclick="window.location.href = 'Menu.html'" />
+            </form>
+        </div>
+
+        <div id="content">
+
+            <center>
+                <form name="myForm" action="http://www.WebsiteDevelopmentBook.com/FormEcho.php" method="post">
+
+                    <fieldset class="feild">
+                        <legend><b>Location</b> </legend>
+                        <iframe id="map" width="450"
+                                height="350"
+                                src="http://maps.google.co.uk/maps?q=moma+new+york&amp;output=embed"></iframe>
+                    </fieldset><br />
+                </form>
+            </center>
+
+
+
+        </div>
+
+    </div>
+
+    <div id="footer">
+
+        <a href="ContactUS.html">Contact US</a>
+        <a href="#">Scroll to Top</a>
+
+
+    </div>
+
+</body>
+</html>

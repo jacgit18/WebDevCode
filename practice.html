@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+   <style>
+   
+   </style>
+    
+     <script>
+         window.onload = practicetext;
+         function practicetext() {
+             
+             var paragraph = document.createElement("p");
+             paragraph.id = "para";
+             paragraph.style.color = "red";
+             paragraph.innerHTML = "hjgjgj";
+             //var text = document.createTextNode("bfkhgshghgosg");
+
+             document.body.style.backgroundColor = "yellow";
+             document.body.style.fontSize = "50px";
+
+             var button = document.createElement("input");
+             button.type = "button";
+             button.value = "change text";
+             button.onclick = changetext;
+
+             document.body.appendChild(button);
+             document.body.appendChild(paragraph);
+         }
+
+         function changetext() {
+             var display = document.getElementById("para");
+             display.style.color = "blue";
+             display.style.fontSize = "75px";
+         }
+
+
+
+
+    </script>
+
+
+</head>
+<body id="body">
+
+</body>
+</html>
